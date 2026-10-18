@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seputar PPKn - Media Pembelajaran Digital</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen pb-24">
+
+    <!-- Header & Brand Bar -->
+    <header class="bg-white border-b border-slate-100 sticky top-0 z-30 px-4 py-3">
+        <div class="max-w-md mx-auto flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-slate-900 text-white flex items-center justify-center font-bold text-xs border border-slate-700 shadow-sm">
+                    SPN
+                </div>
+                <div>
+                    <h1 class="font-extrabold text-base leading-tight text-slate-800">Seputar PPKn</h1>
+                    <p class="text-[11px] font-medium text-slate-400">Media Pembelajaran Digital</p>
+                </div>
+            </div>
+            <!-- Tombol Lonceng Pengumuman -->
+            <button onclick="openNoticeModal()" class="w-9 h-9 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-blue-50 hover:text-blue-600 transition">
+                <i class="fa-regular fa-bell text-sm"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="max-w-md mx-auto px-4 pt-4 space-y-4">
+
+        <!-- Banner Profil Edukator -->
+        <div class="bg-gradient-to-br from-blue-600 to-indigo-700 rounded-2xl p-4 text-white shadow-lg shadow-blue-500/10 flex items-center gap-3.5 relative overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/d/1_S5-xK1Y4K2w6h7Y3l9z-R7oI2V3X-N1=s300" alt="Foto Guru" class="w-14 h-14 rounded-full object-cover border-2 border-white/30 shadow-inner flex-shrink-0">
+            <div class="space-y-0.5 z-10">
+                <span class="text-[9px] font-bold tracking-wider uppercase bg-white/20 px-2 py-0.5 rounded-full backdrop-blur-sm">Educator & Creator</span>
+                <h2 class="font-bold text-sm leading-tight text-white pt-0.5">I Made Wibi Fernanda, S.Pd.</h2>
+                <p class="text-[11px] text-blue-100 font-normal">Guru Pendidikan Pancasila — SMPN 17 Denpasar</p>
+            </div>
+        </div>
+
+        <!-- Grid Menu Utama (3x3) -->
+        <div class="grid grid-cols-3 gap-3 pt-2">
+            
+            <!-- E-Book -->
+            <a href="https://drive.google.com" target="_blank" class="bg-white p-3.5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition text-center flex flex-col items-center gap-2 group">
+                <div class="w-11 h-11 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-lg group-hover:scale-105 transition">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+                <span class="text-xs font-semibold text-slate-700">E-Book</span>
+            </a>
+
+            <!-- Slide PPT -->
+            <a href="https://drive.google.com" target="_blank" class="bg-white p-3.5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition text-center flex flex-col items-center gap-2 group">
+                <div class="w-11 h-11 rounded-xl bg-amber-50 text-amber-500 flex items-center justify-center text-lg group-hover:scale-105 transition">
+                    <i class="fa-solid fa-file-powerpoint"></i>
+                </div>
+                <span class="text-xs font-semibold text-slate-700">Slide PPT</span>
+            </a>
+
+            <!-- Perpus -->
+            <a href="https://drive.google.com" target="_blank" class="bg-white p-3.5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition text-center flex flex-col items-center gap-2 group">
+                <div class="w-11 h-11 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center text-lg group-hover:scale-105 transition">
+                    <i class="fa-solid fa-building-columns"></i>
+                </div>
+                <span class="text-xs font-semibold text-slate-700">Perpus</span>
+            </a>
+
+            <!-- Kuis Soal (Multi-step Modal) -->
+            <button onclick="openQuizModal()" class="bg-white p-3.5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition text-center flex flex-col items-center gap-2 group">
+                <div class="w-11 h-11 rounded-xl bg-rose-50 text-rose-500 flex items-center justify-center text-lg group-hover:scale-105 transition">
+                    <i class="fa-solid fa-circle-question"></i>
+                </div>
+                <span class="text-xs font-semibold text-slate-700">Kuis Soal</span>
+            </button>
+
+            <!-- UUD 1945 -->
+            <a href="https://drive.google.com" target="_blank" class="bg-white p-3.5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition text-center flex flex-col items-center gap-2 group">
+                <div class="w-11 h-11 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-lg group-hover:scale-105 transition">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                </div>
+                <span class="text-xs font-semibold text-slate-700">UUD 1945</span>
+            </a>
+
+            <!-- Video Pembelajaran -->
+            <a href="https://youtube.com/@seputarppkn" target="_blank" class="bg-white p-3.5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition text-center flex flex-col items-center gap-2 group">
+                <div class="w-11 h-11 rounded-xl bg-red-50 text-red-500 flex items-center justify-center text-lg group-hover:scale-105 transition">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+                <span class="text-xs font-semibold text-slate-700">Video</span>
+            </a>
+
+            <!-- Kontak / SI LARAS -->
+            <a href="https://s.id/silaras" target="_blank" class="bg-white p-3.5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition text-center flex flex-col items-center gap-2 group">
+                <div class="w-11 h-11 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center text-lg group-hover:scale-105 transition">
+                    <i class="fa-solid fa-address-book"></i>
+                </div>
+                <span class="text-xs font-semibold text-slate-700">Kontak</span>
+            </a>
+
+            <!-- Saran & Kritik -->
+            <a href="https://s.id/silaras" target="_blank" class="bg-white p-3.5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition text-center flex flex-col items-center gap-2 group">
+                <div class="w-11 h-11 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center text-lg group-hover:scale-105 transition">
+                    <i class="fa-solid fa-comment-dots"></i>
+                </div>
+                <span class="text-xs font-semibold text-slate-700">Saran & Kritik</span>
+            </a>
+
+            <!-- Media Sosial -->
+            <a href="https://youtube.com/@seputarppkn" target="_blank" class="bg-white p-3.5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition text-center flex flex-col items-center gap-2 group">
+                <div class="w-11 h-11 rounded-xl bg-sky-50 text-sky-500 flex items-center justify-center text-lg group-hover:scale-105 transition">
+                    <i class="fa-solid fa-share-nodes"></i>
+                </div>
+                <span class="text-xs font-semibold text-slate-700">Media Sosial</span>
+            </a>
+
+        </div>
+    </main>
+
+    <!-- Bottom Navigation Bar -->
+    <nav class="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-100 py-2.5 z-30">
+        <div class="max-w-md mx-auto grid grid-cols-3 text-center">
+            <a href="#" class="flex flex-col items-center gap-1 text-blue-600">
+                <i class="fa-solid fa-house text-base"></i>
+                <span class="text-[10px] font-bold">Beranda</span>
+            </a>
+            <button onclick="openProfileModal()" class="flex flex-col items-center gap-1 text-slate-400 hover:text-slate-600">
+                <i class="fa-solid fa-user text-base"></i>
+                <span class="text-[10px] font-medium">Profil</span>
+            </button>
+            <button onclick="sharePortal()" class="flex flex-col items-center gap-1 text-slate-400 hover:text-slate-600">
+                <i class="fa-solid fa-share-nodes text-base"></i>
+                <span class="text-[10px] font-medium">Bagikan</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Modal Pop-up Generik -->
+    <div id="content-modal" class="fixed inset-0 bg-slate-900/40 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
+        <div class="bg-white rounded-2xl max-w-sm w-full p-5 shadow-2xl space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+                <h3 id="modal-title" class="font-bold text-slate-800 text-sm">Informasi</h3>
+                <button onclick="closeModal()" class="text-slate-400 hover:text-slate-600 text-sm">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div id="modal-body" class="text-xs text-slate-600 leading-relaxed">
+                <!-- Konten Modal Dinamis -->
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Logic -->
+    <script>
+        // Data Kuis per Kelas (Bab 1 - 5)
+        const quizData = {
+            7: [
+                { bab: "Bab 1", judul: "Sejarah Kelahiran Pancasila", link: "#" },
+                { bab: "Bab 2", judul: "Norma dan UUD NRI Tahun 1945", link: "#" },
+                { bab: "Bab 3", judul: "Kesatuan Indonesia dan Gotong Royong", link: "#" },
+                { bab: "Bab 4", judul: "Kebinekaan Indonesia", link: "#" },
+                { bab: "Bab 5", judul: "Wilayah NKRI dan Kewarganegaraan", link: "#" }
+            ],
+            8: [
+                { bab: "Bab 1", judul: "Kedudukan dan Fungsi Pancasila", link: "#" },
+                { bab: "Bab 2", judul: "Bentuk dan Kedaulatan Negara", link: "#" },
+                { bab: "Bab 3", judul: "Tata Urutan Peraturan Perundang-undangan", link: "#" },
+                { bab: "Bab 4", judul: "Bangkitnya Nasionalisme dan Sumpah Pemuda", link: "#" },
+                { bab: "Bab 5", judul: "Jati Diri Bangsa dan Budaya Nasional", link: "#" }
+            ],
+            9: [
+                { bab: "Bab 1", judul: "Dinamika Perwujudan Pancasila", link: "#" },
+                { bab: "Bab 2", judul: "Pembukaan UUD NRI Tahun 1945", link: "#" },
+                { bab: "Bab 3", judul: "Kedaulatan Rakyat dan Sistem Pemerintahan", link: "#" },
+                { bab: "Bab 4", judul: "Persatuan dan Keberagaman Masyarakat", link: "#" },
+                { bab: "Bab 5", judul: "Bela Negara dalam Konteks NKRI", link: "#" }
+            ]
+        };
+
+        // Fungsi Tutup Modal
+        function closeModal() {
+            document.getElementById('content-modal').classList.add('hidden');
+        }
+
+        // Modal Profil Guru
+        function openProfileModal() {
+            const modal = document.getElementById('content-modal');
+            const title = document.getElementById('modal-title');
+            const body = document.getElementById('modal-body');
+
+            modal.classList.remove('hidden');
+            title.innerHTML = `<i class="fa-solid fa-id-card text-blue-600"></i> Profil Pengampu`;
+            body.innerHTML = `
+                <div class="text-center space-y-2">
+                    <h4 class="font-bold text-sm text-slate-800">I Made Wibi Fernanda, S.Pd.</h4>
+                    <p class="text-slate-500">Guru Pendidikan Pancasila SMPN 17 Denpasar</p>
+                    <p class="pt-2 text-slate-600">Selamat datang di portal Seputar PPKn! Media ini dirancang khusus untuk mempermudah akses materi, kuis, dan referensi belajar kawan-kawan semua.</p>
+                </div>
+            `;
+        }
+
+        // Modal Lonceng Pengumuman
+        function openNoticeModal() {
+            const modal = document.getElementById('content-modal');
+            const title = document.getElementById('modal-title');
+            const body = document.getElementById('modal-body');
+
+            modal.classList.remove('hidden');
+            title.innerHTML = `<i class="fa-solid fa-bell text-amber-500"></i> Info & Pengumuman`;
+            body.innerHTML = `
+                <div class="p-3 bg-blue-50 border border-blue-100 rounded-xl space-y-1">
+                    <span class="text-[9px] font-bold text-blue-600 bg-white px-2 py-0.5 rounded">TERBARU</span>
+                    <h5 class="font-bold text-slate-800 pt-1">Portal Seputar PPKn Resmi Rilis!</h5>
+                    <p class="text-slate-600">Gunakan portal ini untuk mengakses E-book, Slide PPT, dan Latihan Soal Kuis harian kalian ya.</p>
+                </div>
+            `;
+        }
+
+        // Modal Kuis (Step 1: Pilih Kelas)
+        function openQuizModal() {
+            const modal = document.getElementById('content-modal');
+            const title = document.getElementById('modal-title');
+            const body = document.getElementById('modal-body');
+
+            modal.classList.remove('hidden');
+            title.innerHTML = `<i class="fa-solid fa-gamepad text-blue-600"></i> Kuis PPKn Interaktif`;
+            
+            body.innerHTML = `
+                <p class="text-xs text-slate-500 mb-3 text-center">Pilih jenjang kelas kamu terlebih dahulu:</p>
+                <div class="grid grid-cols-3 gap-2">
+                    <button onclick="showQuizList(7)" class="p-3 bg-blue-50 border border-blue-200 rounded-xl text-center hover:bg-blue-100 transition">
+                        <div class="text-lg font-extrabold text-blue-600">7</div>
+                        <div class="text-[10px] font-medium text-slate-600">Kelas VII</div>
+                    </button>
+                    <button onclick="showQuizList(8)" class="p-3 bg-emerald-50 border border-emerald-200 rounded-xl text-center hover:bg-emerald-100 transition">
+                        <div class="text-lg font-extrabold text-emerald-600">8</div>
+                        <div class="text-[10px] font-medium text-slate-600">Kelas VIII</div>
+                    </button>
+                    <button onclick="showQuizList(9)" class="p-3 bg-purple-50 border border-purple-200 rounded-xl text-center hover:bg-purple-100 transition">
+                        <div class="text-lg font-extrabold text-purple-600">9</div>
+                        <div class="text-[10px] font-medium text-slate-600">Kelas IX</div>
+                    </button>
+                </div>
+            `;
+        }
+
+        // Modal Kuis (Step 2: Daftar Bab)
+        function showQuizList(kelas) {
+            const title = document.getElementById('modal-title');
+            const body = document.getElementById('modal-body');
+            const list = quizData[kelas];
+
+            title.innerHTML = `
+                <div class="flex items-center gap-2">
+                    <button onclick="openQuizModal()" class="text-slate-400 hover:text-slate-600 text-sm">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                    <span>Kuis Kelas ${kelas}</span>
+                </div>
+            `;
+
+            let html = `<div class="space-y-2 max-h-[60vh] overflow-y-auto pr-1">`;
+            
+            list.forEach((item) => {
+                const isReady = item.link !== "#";
+                html += `
+                    <div class="p-2.5 bg-slate-50 border border-slate-100 rounded-xl flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] font-bold text-blue-600 bg-blue-50 px-1.5 py-0.5 rounded">${item.bab}</span>
+                            <h6 class="text-xs font-semibold text-slate-800 mt-0.5">${item.judul}</h6>
+                        </div>
+                        ${isReady 
+                            ? `<a href="${item.link}" target="_blank" class="px-2.5 py-1 bg-blue-600 text-white text-[10px] font-medium rounded-lg hover:bg-blue-700 transition">Mulai</a>`
+                            : `<span class="text-[10px] text-slate-400 italic">Segera</span>`
+                        }
+                    </div>
+                `;
+            });
+
+            html += `</div>`;
+            body.innerHTML = html;
+        }
+
+        // Fitur Bagikan Link
+        function sharePortal() {
+            if (navigator.share) {
+                navigator.share({
+                    title: 'Seputar PPKn',
+                    text: 'Media Pembelajaran Digital Pendidikan Pancasila SMPN 17 Denpasar',
+                    url: window.location.href,
+                });
+            } else {
+                navigator.clipboard.writeText(window.location.href);
+                alert('Link portal berhasil disalin!');
+            }
+        }
+    </script>
+</body>
+</html>
