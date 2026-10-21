@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Katalog Kokurikuler & PKWu - SMPN 17 Denpasar</title>
+  <title>Kokurikuler VII - SMPN 17 Denpasar</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
   <style>
@@ -11,7 +11,7 @@
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     }
     .gradient-banner {
-      background: linear-gradient(135deg, #059669 0%, #10b981 50%, #047857 100%);
+      background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 50%, #1e40af 100%);
     }
   </style>
 </head>
@@ -22,10 +22,10 @@
     <!-- HEADER ATAS (RAPI & SOLID STICKY) -->
     <header class="p-4 flex items-center justify-between bg-white sticky top-0 z-50 border-b border-gray-100 shadow-sm">
       <div class="flex items-center gap-3">
-        <img src="Logo sekolah.jpg" class="w-10 h-10 rounded-full object-cover border shadow-sm" alt="Logo Sekolah" onerror="this.src='https://via.placeholder.com/100?text=SMPN17'">
+        <img src="Logo sekolah.png" class="w-10 h-10 rounded-full object-cover border shadow-sm" alt="Logo Sekolah" onerror="this.src='https://via.placeholder.com/100?text=SMPN17'">
         <div>
-          <h1 class="text-base font-bold text-slate-800 leading-tight">Pameran Kokurikuler</h1>
-          <p class="text-xs text-gray-400">Karya & Kewirausahaan Siswa SMPN 17 Denpasar</p>
+          <h1 class="text-base font-bold text-slate-800 leading-tight">Pameran Kewirausahaan</h1>
+          <p class="text-xs text-gray-400">Seventeen Creative Market Fest</p>
         </div>
       </div>
       <button class="w-9 h-9 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-gray-200 transition">
@@ -36,18 +36,18 @@
     <!-- CONTENT BODY -->
     <main class="flex-1 p-4 space-y-5">
 
-      <!-- BANNER GRADIEN HIJAU -->
+      <!-- BANNER GRADIEN BIRU -->
       <div class="gradient-banner text-white rounded-2xl p-4 shadow-md relative overflow-hidden flex items-center gap-4">
         <div class="relative z-10">
           <img src="Wibi.jpg" class="w-16 h-16 rounded-full border-2 border-white/80 object-cover shadow" alt="Pengelola" onerror="this.src='https://via.placeholder.com/100?text=Guru'">
         </div>
         
         <div class="relative z-10 flex-1">
-          <span class="inline-block bg-emerald-400/30 text-emerald-100 text-[10px] font-semibold tracking-wider px-2 py-0.5 rounded-md uppercase mb-1 border border-emerald-300/30">
-            PASAR KOKURIKULER & PKWu
+          <span class="inline-block bg-blue-400/30 text-blue-100 text-[10px] font-semibold tracking-wider px-2 py-0.5 rounded-md uppercase mb-1 border border-blue-300/30">
+            PROJECT BY
           </span>
           <h2 class="font-bold text-sm leading-snug">I Made Wibi Fernanda, S.Pd.</h2>
-          <p class="text-xs text-emerald-100 mt-0.5 font-light">Pembimbing Kokurikuler SMPN 17 Denpasar</p>
+          <p class="text-xs text-blue-100 mt-0.5 font-light">Tim Kokurikuler SMPN 17 Denpasar</p>
         </div>
       </div>
 
@@ -55,21 +55,21 @@
       <section id="page-beranda" class="space-y-4">
         <div class="flex items-center justify-between">
           <h3 class="font-bold text-slate-800 text-sm flex items-center gap-2">
-            <i class="fa-solid fa-store text-emerald-600"></i> Produk Karya Siswa
+            <i class="fa-solid fa-store text-blue-600"></i> Produk Karya Siswa
           </h3>
           <span id="total-item-count" class="text-xs text-gray-400 font-medium">0 Produk</span>
         </div>
 
         <div class="relative">
           <input type="text" id="search-input" oninput="renderKatalog()" placeholder="Cari nama produk / makanan..." 
-                 class="w-full bg-gray-100 text-xs rounded-xl pl-9 pr-4 py-2.5 outline-none focus:ring-2 focus:ring-emerald-500 transition">
+                 class="w-full bg-gray-100 text-xs rounded-xl pl-9 pr-4 py-2.5 outline-none focus:ring-2 focus:ring-blue-500 transition">
           <i class="fa-solid fa-magnifying-glass absolute left-3 top-3 text-gray-400 text-xs"></i>
         </div>
 
         <div id="katalog-grid" class="grid grid-cols-2 gap-3"></div>
 
         <div id="empty-state" class="text-center py-12 px-4 bg-gray-50 rounded-2xl border border-dashed border-gray-200">
-          <div class="w-12 h-12 bg-emerald-50 text-emerald-500 rounded-full flex items-center justify-center mx-auto mb-3">
+          <div class="w-12 h-12 bg-blue-50 text-blue-500 rounded-full flex items-center justify-center mx-auto mb-3">
             <i class="fa-solid fa-box-open text-xl"></i>
           </div>
           <p class="font-semibold text-xs text-gray-700">Belum Ada Produk Karya Siswa</p>
@@ -82,7 +82,7 @@
         
         <div class="bg-white border border-gray-100 rounded-2xl p-4 shadow-sm space-y-3">
           <h3 id="form-title" class="font-bold text-slate-800 text-sm flex items-center gap-2 border-b pb-2">
-            <i class="fa-solid fa-plus-circle text-emerald-600"></i> Tambah Produk Karya Baru
+            <i class="fa-solid fa-plus-circle text-blue-600"></i> Tambah Produk Karya Baru
           </h3>
           
           <form id="form-produk" onsubmit="simpanBarang(event)" class="space-y-3">
@@ -91,36 +91,36 @@
             <div>
               <label class="block text-[11px] font-semibold text-gray-600 mb-1">Nama Produk / Makanan</label>
               <input type="text" id="input-nama" placeholder="Contoh: Keripik Singkong Balado" required 
-                     class="w-full border text-xs p-2.5 rounded-xl outline-none focus:ring-2 focus:ring-emerald-500">
+                     class="w-full border text-xs p-2.5 rounded-xl outline-none focus:ring-2 focus:ring-blue-500">
             </div>
 
             <div class="grid grid-cols-2 gap-2">
               <div>
                 <label class="block text-[11px] font-semibold text-gray-600 mb-1">Harga (Rp)</label>
                 <input type="number" id="input-harga" placeholder="5000" required 
-                       class="w-full border text-xs p-2.5 rounded-xl outline-none focus:ring-2 focus:ring-emerald-500">
+                       class="w-full border text-xs p-2.5 rounded-xl outline-none focus:ring-2 focus:ring-blue-500">
               </div>
               <div>
                 <label class="block text-[11px] font-semibold text-gray-600 mb-1">Jumlah Stok</label>
                 <input type="number" id="input-stok" placeholder="10" required 
-                       class="w-full border text-xs p-2.5 rounded-xl outline-none focus:ring-2 focus:ring-emerald-500">
+                       class="w-full border text-xs p-2.5 rounded-xl outline-none focus:ring-2 focus:ring-blue-500">
               </div>
             </div>
 
             <div>
               <label class="block text-[11px] font-semibold text-gray-600 mb-1">Nomor WhatsApp Penjual / Kelompok</label>
               <input type="text" id="input-wa" placeholder="Contoh: 081234567890" required 
-                     class="w-full border text-xs p-2.5 rounded-xl outline-none focus:ring-2 focus:ring-emerald-500">
+                     class="w-full border text-xs p-2.5 rounded-xl outline-none focus:ring-2 focus:ring-blue-500">
             </div>
 
             <div>
               <label class="block text-[11px] font-semibold text-gray-600 mb-1">URL / Nama File Foto (Opsional)</label>
               <input type="text" id="input-foto" placeholder="Contoh: keripik.jpg atau link URL" 
-                     class="w-full border text-xs p-2.5 rounded-xl outline-none focus:ring-2 focus:ring-emerald-500">
+                     class="w-full border text-xs p-2.5 rounded-xl outline-none focus:ring-2 focus:ring-blue-500">
             </div>
 
             <div class="flex gap-2">
-              <button type="submit" id="btn-submit" class="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs py-2.5 rounded-xl shadow transition">
+              <button type="submit" id="btn-submit" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs py-2.5 rounded-xl shadow transition">
                 + Simpan Produk
               </button>
               <button type="button" id="btn-batal" onclick="resetForm()" class="hidden bg-gray-200 text-gray-700 font-bold text-xs py-2.5 px-4 rounded-xl transition">
@@ -132,7 +132,7 @@
 
         <div class="bg-white border border-gray-100 rounded-2xl p-4 shadow-sm space-y-3">
           <h3 class="font-bold text-slate-800 text-sm flex items-center gap-2 border-b pb-2">
-            <i class="fa-solid fa-list-check text-emerald-600"></i> Kelola Stok & Produk
+            <i class="fa-solid fa-list-check text-blue-600"></i> Kelola Stok & Produk
           </h3>
           <div id="admin-list" class="space-y-2"></div>
         </div>
@@ -149,7 +149,7 @@
 
       <!-- TAB SARAN & ASPIRASI -->
       <section id="page-saran" class="hidden bg-white border border-gray-100 rounded-2xl p-6 text-center space-y-4 shadow-sm">
-        <div class="w-12 h-12 bg-emerald-50 text-emerald-600 rounded-full flex items-center justify-center mx-auto">
+        <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center mx-auto">
           <i class="fa-solid fa-comments text-xl"></i>
         </div>
         <div>
@@ -157,14 +157,14 @@
           <p class="text-xs text-gray-400 mt-1">Punya usulan karya atau masukan kegiatan Kokurikuler? Sampaikan di sini ya!</p>
         </div>
 
-        <a href="https://forms.google.com" target="_blank" class="block w-full bg-emerald-600 text-white font-bold py-3 rounded-xl text-xs shadow hover:bg-emerald-700 transition">
+        <a href="https://forms.google.com" target="_blank" class="block w-full bg-blue-600 text-white font-bold py-3 rounded-xl text-xs shadow hover:bg-blue-700 transition">
           📝 Isi Form Masukan
         </a>
       </section>
 
       <!-- BAGIKAN -->
       <section id="page-bagikan" class="hidden bg-white border border-gray-100 rounded-2xl p-6 text-center space-y-4 shadow-sm">
-        <div class="w-12 h-12 bg-emerald-50 text-emerald-600 rounded-full flex items-center justify-center mx-auto">
+        <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center mx-auto">
           <i class="fa-solid fa-qrcode text-xl"></i>
         </div>
         <div>
@@ -176,7 +176,7 @@
           <img id="qr-img" src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https://github.com" alt="QR Code" class="mx-auto rounded-lg">
         </div>
 
-        <button onclick="copyURL()" class="w-full bg-emerald-600 text-white font-bold py-2.5 rounded-xl text-xs shadow hover:bg-emerald-700 transition">
+        <button onclick="copyURL()" class="w-full bg-blue-600 text-white font-bold py-2.5 rounded-xl text-xs shadow hover:bg-blue-700 transition">
           🔗 Salin Link Katalog
         </button>
       </section>
@@ -186,7 +186,7 @@
     <!-- MODAL POPUP PASSWORD ADMIN -->
     <div id="password-modal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
       <div class="bg-white rounded-2xl p-5 w-full max-w-xs shadow-2xl space-y-4 text-center">
-        <div class="w-12 h-12 bg-emerald-50 text-emerald-600 rounded-full flex items-center justify-center mx-auto">
+        <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center mx-auto">
           <i class="fa-solid fa-lock text-xl"></i>
         </div>
         <div>
@@ -195,19 +195,19 @@
         </div>
         <div>
           <input type="password" id="input-pass" placeholder="Masukkan password..." 
-                 class="w-full border text-center text-xs p-2.5 rounded-xl outline-none focus:ring-2 focus:ring-emerald-500">
+                 class="w-full border text-center text-xs p-2.5 rounded-xl outline-none focus:ring-2 focus:ring-blue-500">
           <p id="pass-error" class="text-[10px] text-red-500 mt-1 hidden">Password salah! Akses ditolak.</p>
         </div>
         <div class="flex gap-2">
           <button onclick="batalPassword()" class="w-1/2 bg-gray-100 text-gray-600 font-bold py-2 rounded-xl text-xs">Batal</button>
-          <button onclick="verifikasiPassword()" class="w-1/2 bg-emerald-600 text-white font-bold py-2 rounded-xl text-xs shadow">Masuk</button>
+          <button onclick="verifikasiPassword()" class="w-1/2 bg-blue-600 text-white font-bold py-2 rounded-xl text-xs shadow">Masuk</button>
         </div>
       </div>
     </div>
 
     <!-- BOTTOM NAV BAR (BERANDA | ADMIN | SARAN | BAGIKAN) -->
     <nav class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 flex justify-around p-2.5 shadow-lg max-w-md mx-auto z-20">
-      <button onclick="switchTab('beranda')" id="tab-beranda" class="text-emerald-600 font-bold flex flex-col items-center gap-1 text-[11px]">
+      <button onclick="switchTab('beranda')" id="tab-beranda" class="text-blue-600 font-bold flex flex-col items-center gap-1 text-[11px]">
         <i class="fa-solid fa-house text-base"></i> Beranda
       </button>
       <button onclick="mintaAksesAdmin()" id="tab-admin" class="text-gray-400 flex flex-col items-center gap-1 text-[11px]">
@@ -252,7 +252,7 @@
       document.getElementById('tab-bagikan').className = "text-gray-400 flex flex-col items-center gap-1 text-[11px]";
 
       document.getElementById(`page-${tab}`).classList.remove('hidden');
-      document.getElementById(`tab-${tab}`).className = "text-emerald-600 font-bold flex flex-col items-center gap-1 text-[11px]";
+      document.getElementById(`tab-${tab}`).className = "text-blue-600 font-bold flex flex-col items-center gap-1 text-[11px]";
     }
 
     function mintaAksesAdmin() {
@@ -271,7 +271,7 @@
 
     function verifikasiPassword() {
       const pass = document.getElementById('input-pass').value;
-      if (pass === '@smpn17jujur') { // Sesuaikan password jika mau
+      if (pass === '@smpn17jujur') { // Ubah password admin di sini jika perlu
         isAdminUnlocked = true;
         document.getElementById('password-modal').classList.add('hidden');
         switchTab('admin');
@@ -315,18 +315,18 @@
           <div class="bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between">
             <div class="relative h-28 bg-gray-100">
               <img src="${item.foto || 'https://via.placeholder.com/150?text=Produk'}" class="w-full h-full object-cover" alt="${item.nama}" onerror="this.src='https://via.placeholder.com/150?text=Produk'">
-              <span class="absolute top-2 right-2 text-[10px] font-bold px-2 py-0.5 rounded-full ${item.stok > 0 ? 'bg-emerald-600 text-white' : 'bg-red-500 text-white'} shadow">
+              <span class="absolute top-2 right-2 text-[10px] font-bold px-2 py-0.5 rounded-full ${item.stok > 0 ? 'bg-blue-600 text-white' : 'bg-red-500 text-white'} shadow">
                 ${item.stok > 0 ? 'Stok: ' + item.stok : 'Habis'}
               </span>
             </div>
             <div class="p-3 flex flex-col justify-between flex-1 space-y-2">
               <div>
                 <h4 class="font-bold text-xs text-gray-800 line-clamp-1">${item.nama}</h4>
-                <p class="text-emerald-600 font-extrabold text-xs mt-0.5">Rp ${Number(item.harga).toLocaleString('id-ID')}</p>
+                <p class="text-blue-600 font-extrabold text-xs mt-0.5">Rp ${Number(item.harga).toLocaleString('id-ID')}</p>
               </div>
 
               ${item.stok > 0 && waClean ? `
-                <a href="${waLink}" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-[11px] py-1.5 rounded-lg flex items-center justify-center gap-1 shadow transition">
+                <a href="${waLink}" target="_blank" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold text-[11px] py-1.5 rounded-lg flex items-center justify-center gap-1 shadow transition">
                   <i class="fa-brands fa-whatsapp text-xs"></i> Pesan
                 </a>
               ` : `
@@ -354,11 +354,11 @@
             <div>
               <h4 class="font-bold text-xs text-gray-800">${item.nama}</h4>
               <p class="text-[11px] text-gray-500">Rp ${Number(item.harga).toLocaleString('id-ID')} | Stok: ${item.stok}</p>
-              <p class="text-[10px] text-emerald-600 font-medium">WA: ${item.wa || '-'}</p>
+              <p class="text-[10px] text-blue-600 font-medium">WA: ${item.wa || '-'}</p>
             </div>
           </div>
           <div class="flex gap-1">
-            <button onclick="editBarang(${index})" class="w-7 h-7 bg-emerald-100 text-emerald-600 rounded-lg flex items-center justify-center text-xs hover:bg-emerald-200">
+            <button onclick="editBarang(${index})" class="w-7 h-7 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center text-xs hover:bg-blue-200">
               <i class="fa-solid fa-pen"></i>
             </button>
             <button onclick="hapusBarang(${index})" class="w-7 h-7 bg-red-100 text-red-600 rounded-lg flex items-center justify-center text-xs hover:bg-red-200">
@@ -401,7 +401,7 @@
       document.getElementById('input-wa').value = item.wa || '';
       document.getElementById('input-foto').value = item.foto || '';
 
-      document.getElementById('form-title').innerHTML = `<i class="fa-solid fa-pen-to-square text-emerald-600"></i> Edit Produk Karya`;
+      document.getElementById('form-title').innerHTML = `<i class="fa-solid fa-pen-to-square text-blue-600"></i> Edit Produk Karya`;
       document.getElementById('btn-submit').innerText = '✓ Perbarui Produk';
       document.getElementById('btn-batal').classList.remove('hidden');
     }
@@ -409,7 +409,7 @@
     function resetForm() {
       document.getElementById('form-produk').reset();
       document.getElementById('edit-index').value = "-1";
-      document.getElementById('form-title').innerHTML = `<i class="fa-solid fa-plus-circle text-emerald-600"></i> Tambah Produk Karya Baru`;
+      document.getElementById('form-title').innerHTML = `<i class="fa-solid fa-plus-circle text-blue-600"></i> Tambah Produk Karya Baru`;
       document.getElementById('btn-submit').innerText = '+ Simpan Produk';
       document.getElementById('btn-batal').classList.add('hidden');
     }
