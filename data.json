@@ -75,5 +75,152 @@
     "kelompok": "Kelompok 5/VII.C",
     "wa": "085792325911",
     "foto": "7C.K5 (1).jpg"
+  },
+  {
+    "nama": "Dalgona Milo",
+    "harga": 8000,
+    "kelompok": "Kelompok 4/VII.A",
+    "wa": "08113705024",
+    "foto": "7A.K4.1.jpg"
+  },
+  {
+    "nama": "Dalgona Matcha",
+    "harga": 8000,
+    "kelompok": "Kelompok 4/VII.A",
+    "wa": "08113705024",
+    "foto": "7A.K4.2.jpg"
+  },
+  {
+    "nama": "Sandwich",
+    "harga": 10000,
+    "kelompok": "Kelompok 1/VII.A",
+    "wa": "085133896707",
+    "foto": "7A.K1.2.jpg"
+  },
+  {
+    "nama": "Blue Ocean",
+    "harga": 7000,
+    "kelompok": "Kelompok 1/VII.A",
+    "wa": "085133896707",
+    "foto": "7A.K1.1.jpg"
+  },
+  {
+    "nama": "Es Mojito",
+    "harga": 8000,
+    "kelompok": "Kelompok 2/VII.A",
+    "wa": "081215645462",
+    "foto": "7A.K2.1.jpeg"
+  },
+  {
+    "nama": "Jasuke",
+    "harga": 8000,
+    "kelompok": "Kelompok 3/VII.A",
+    "wa": "085952480706",
+    "foto": "7A.K3.1.jpg"
+  },
+  {
+    "nama": "Es Coklat dan Matcha",
+    "harga": 5000,
+    "kelompok": "Kelompok 3/VII.A",
+    "wa": "085952480706",
+    "foto": "7A.K3.2.jpg"
+  },
+  {
+    "nama": "Risol Mayo",
+    "harga": 3000,
+    "kelompok": "Kelompok 5/VII.A",
+    "wa": "082329165180",
+    "foto": "7A.K5.1.png"
+  },
+  {
+    "nama": "Rujak Kuah Pindang",
+    "harga": 5000,
+    "kelompok": "Kelompok 5/VII.A",
+    "wa": "082329165180",
+    "foto": "7A.K5.2.png"
+  },
+  {
+    "nama": "Es Buah",
+    "harga": 7000,
+    "kelompok": "Kelompok 5/VII.A",
+    "wa": "082329165180",
+    "foto": "7A.K5.3.jpg"
+  },
+  {
+    "nama": "Rujak Gula Pasir",
+    "harga": 5000,
+    "kelompok": "Kelompok 5/VII.A",
+    "wa": "082329165180",
+    "foto": "7A.K5.4.jpg"
+  },
+  {
+    "nama": "Nyaam Cookies",
+    "harga": 6000,
+    "kelompok": "Kelompok 1/VII.B",
+    "wa": "085142920791",
+    "foto": "7B.K1.2.jpg"
+  },
+  {
+    "nama": "Mellow",
+    "harga": 8000,
+    "kelompok": "Kelompok 1/VII.B",
+    "wa": "085142920791",
+    "foto": "7B.K1.1.jpg"
+  },
+  {
+    "nama": "Es Matcha",
+    "harga": 10000,
+    "kelompok": "Kelompok 2/VII.B",
+    "wa": "087876042367",
+    "foto": "7B.K2.1.jpg"
+  },
+  {
+    "nama": "Risol Mayo",
+    "harga": 3000,
+    "kelompok": "Kelompok 3/VII.B",
+    "wa": "087841440161",
+    "foto": "7B.K3.2.jpg"
+  },
+  {
+    "nama": "Milo Crunch",
+    "harga": 4000,
+    "kelompok": "Kelompok 3/VII.B",
+    "wa": "087841440161",
+    "foto": "7B.K3.4.jpg"
+  },
+  {
+    "nama": "Fire Roll",
+    "harga": 4000,
+    "kelompok": "Kelompok 3/VII.B",
+    "wa": "087841440161",
+    "foto": "7B.K3.3.jpg"
+  },
+  {
+    "nama": "Banana Choco Boom",
+    "harga": 2000,
+    "kelompok": "Kelompok 3/VII.B",
+    "wa": "087841440161",
+    "foto": "7B.K3.1.jpg"
+  },
+  {
+    "nama": "Stiky Milk",
+    "harga": 8000,
+    "kelompok": "Kelompok 4/VII.B",
+    "wa": "085134451233",
+    "foto": "7B.K4.1.jpg"
+  },
+  {
+    "nama": "Fruit Sando",
+    "harga": 8000,
+    "kelompok": "Kelompok 5/VII.B",
+    "wa": "087818220080",
+    "foto": "7B.K5.1.jpg"
+  },
+  {
+    "nama": "Milk Tea",
+    "harga": 4000,
+    "kelompok": "Kelompok 5/VII.B",
+    "wa": "087818220080",
+    "foto": "7B.K5.2.jpg"
   }
 ]
