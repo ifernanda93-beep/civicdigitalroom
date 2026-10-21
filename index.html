@@ -61,7 +61,7 @@
         </div>
 
         <div class="relative">
-          <input type="text" id="search-input" oninput="renderKatalog()" placeholder="Cari nama produk / makanan..." 
+          <input type="text" id="search-input" oninput="renderKatalog()" placeholder="Cari nama produk / kelompok..." 
                  class="w-full bg-gray-100 text-xs rounded-xl pl-9 pr-4 py-2.5 outline-none focus:ring-2 focus:ring-blue-500 transition">
           <i class="fa-solid fa-magnifying-glass absolute left-3 top-3 text-gray-400 text-xs"></i>
         </div>
@@ -101,8 +101,8 @@
                        class="w-full border text-xs p-2.5 rounded-xl outline-none focus:ring-2 focus:ring-blue-500">
               </div>
               <div>
-                <label class="block text-[11px] font-semibold text-gray-600 mb-1">Jumlah Stok</label>
-                <input type="number" id="input-stok" placeholder="10" required 
+                <label class="block text-[11px] font-semibold text-gray-600 mb-1">Nama Kelompok / Kelas</label>
+                <input type="text" id="input-kelompok" placeholder="Contoh: Kelompok 1 (7A)" required 
                        class="w-full border text-xs p-2.5 rounded-xl outline-none focus:ring-2 focus:ring-blue-500">
               </div>
             </div>
@@ -132,7 +132,7 @@
 
         <div class="bg-white border border-gray-100 rounded-2xl p-4 shadow-sm space-y-3">
           <h3 class="font-bold text-slate-800 text-sm flex items-center gap-2 border-b pb-2">
-            <i class="fa-solid fa-list-check text-blue-600"></i> Kelola Stok & Produk
+            <i class="fa-solid fa-list-check text-blue-600"></i> Kelola Produk
           </h3>
           <div id="admin-list" class="space-y-2"></div>
         </div>
@@ -271,7 +271,7 @@
 
     function verifikasiPassword() {
       const pass = document.getElementById('input-pass').value;
-      if (pass === '@smpn17jujur') { // Ubah password admin di sini jika perlu
+      if (pass === '@smpn17jujur') {
         isAdminUnlocked = true;
         document.getElementById('password-modal').classList.add('hidden');
         switchTab('admin');
@@ -283,7 +283,7 @@
 
     function formatNomorWA(no) {
       if (!no) return '';
-      let bersih = no.replace(/\D/g, ''); // Hapus karakter non-angka
+      let bersih = no.replace(/\D/g, '');
       if (bersih.startsWith('0')) {
         bersih = '62' + bersih.slice(1);
       }
@@ -295,7 +295,10 @@
       const emptyState = document.getElementById('empty-state');
       const searchKeyword = document.getElementById('search-input').value.toLowerCase();
       
-      const filtered = produkList.filter(p => p.nama.toLowerCase().includes(searchKeyword));
+      const filtered = produkList.filter(p => 
+        p.nama.toLowerCase().includes(searchKeyword) || 
+        (p.kelompok && p.kelompok.toLowerCase().includes(searchKeyword))
+      );
 
       document.getElementById('total-item-count').innerText = `${filtered.length} Produk`;
 
@@ -308,32 +311,28 @@
       emptyState.classList.add('hidden');
       grid.innerHTML = filtered.map(item => {
         const waClean = formatNomorWA(item.wa);
-        const pesananText = encodeURIComponent(`Halo, saya mau pesan ${item.nama} harga Rp ${Number(item.harga).toLocaleString('id-ID')}`);
+        const pesananText = encodeURIComponent(`Halo, saya mau pesan ${item.nama} (${item.kelompok || 'Kelompok'}) harga Rp ${Number(item.harga).toLocaleString('id-ID')}`);
         const waLink = `https://wa.me/${waClean}?text=${pesananText}`;
 
         return `
           <div class="bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between">
             <div class="relative h-28 bg-gray-100">
               <img src="${item.foto || 'https://via.placeholder.com/150?text=Produk'}" class="w-full h-full object-cover" alt="${item.nama}" onerror="this.src='https://via.placeholder.com/150?text=Produk'">
-              <span class="absolute top-2 right-2 text-[10px] font-bold px-2 py-0.5 rounded-full ${item.stok > 0 ? 'bg-blue-600 text-white' : 'bg-red-500 text-white'} shadow">
-                ${item.stok > 0 ? 'Stok: ' + item.stok : 'Habis'}
-              </span>
             </div>
             <div class="p-3 flex flex-col justify-between flex-1 space-y-2">
               <div>
                 <h4 class="font-bold text-xs text-gray-800 line-clamp-1">${item.nama}</h4>
                 <p class="text-blue-600 font-extrabold text-xs mt-0.5">Rp ${Number(item.harga).toLocaleString('id-ID')}</p>
+                <p class="text-[10px] text-gray-400 font-medium mt-1 flex items-center gap-1">
+                  <i class="fa-solid fa-users text-[9px] text-gray-400"></i> ${item.kelompok || 'Kelompok -'}
+                </p>
               </div>
 
-              ${item.stok > 0 && waClean ? `
+              ${waClean ? `
                 <a href="${waLink}" target="_blank" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold text-[11px] py-1.5 rounded-lg flex items-center justify-center gap-1 shadow transition">
                   <i class="fa-brands fa-whatsapp text-xs"></i> Pesan
                 </a>
-              ` : `
-                <button disabled class="w-full bg-gray-200 text-gray-400 font-bold text-[11px] py-1.5 rounded-lg cursor-not-allowed">
-                  Habis
-                </button>
-              `}
+              ` : ''}
             </div>
           </div>
         `;
@@ -353,7 +352,7 @@
             <img src="${item.foto || 'https://via.placeholder.com/150?text=Produk'}" class="w-10 h-10 rounded-lg object-cover border" onerror="this.src='https://via.placeholder.com/150?text=Produk'">
             <div>
               <h4 class="font-bold text-xs text-gray-800">${item.nama}</h4>
-              <p class="text-[11px] text-gray-500">Rp ${Number(item.harga).toLocaleString('id-ID')} | Stok: ${item.stok}</p>
+              <p class="text-[11px] text-gray-500">Rp ${Number(item.harga).toLocaleString('id-ID')} | ${item.kelompok || '-'}</p>
               <p class="text-[10px] text-blue-600 font-medium">WA: ${item.wa || '-'}</p>
             </div>
           </div>
@@ -374,15 +373,15 @@
       const idx = parseInt(document.getElementById('edit-index').value);
       const nama = document.getElementById('input-nama').value;
       const harga = Number(document.getElementById('input-harga').value);
-      const stok = Number(document.getElementById('input-stok').value);
+      const kelompok = document.getElementById('input-kelompok').value;
       const wa = document.getElementById('input-wa').value;
       const foto = document.getElementById('input-foto').value;
 
       if (idx === -1) {
-        produkList.push({ nama, harga, stok, wa, foto });
+        produkList.push({ nama, harga, kelompok, wa, foto });
         alert('Produk berhasil ditambahkan! Silakan salin Kode JSON di bawah dan paste ke file data.json di GitHub.');
       } else {
-        produkList[idx] = { nama, harga, stok, wa, foto };
+        produkList[idx] = { nama, harga, kelompok, wa, foto };
         alert('Produk berhasil diperbarui! Silakan salin Kode JSON di bawah dan paste ke file data.json di GitHub.');
       }
 
@@ -397,7 +396,7 @@
       document.getElementById('edit-index').value = index;
       document.getElementById('input-nama').value = item.nama;
       document.getElementById('input-harga').value = item.harga;
-      document.getElementById('input-stok').value = item.stok;
+      document.getElementById('input-kelompok').value = item.kelompok || '';
       document.getElementById('input-wa').value = item.wa || '';
       document.getElementById('input-foto').value = item.foto || '';
 
