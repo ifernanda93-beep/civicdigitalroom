@@ -1,308 +1,412 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seputar PPKn - Media Pembelajaran Digital</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Plus Jakarta Sans', sans-serif; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kain Tenun - Kantin Integritas</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    .gradient-banner {
+      background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 50%, #1e40af 100%);
+    }
+  </style>
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased min-h-screen pb-24">
+<body class="bg-gray-50 min-h-screen pb-24 text-gray-800">
 
-    <!-- Header & Brand Bar -->
-    <header class="bg-white border-b border-slate-100 sticky top-0 z-30 px-4 py-3">
-        <div class="max-w-md mx-auto flex items-center justify-between">
-            <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-full bg-slate-900 text-white flex items-center justify-center font-bold text-xs border border-slate-700 shadow-sm">
-                    SPN
-                </div>
-                <div>
-                    <h1 class="font-extrabold text-base leading-tight text-slate-800">Seputar PPKn</h1>
-                    <p class="text-[11px] font-medium text-slate-400">Media Pembelajaran Digital</p>
-                </div>
-            </div>
-            <!-- Tombol Lonceng Pengumuman -->
-            <button onclick="openNoticeModal()" class="w-9 h-9 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-blue-50 hover:text-blue-600 transition">
-                <i class="fa-regular fa-bell text-sm"></i>
-            </button>
+  <div class="max-w-md mx-auto min-h-screen bg-white shadow-lg relative flex flex-col">
+
+   <!-- HEADER ATAS (RAPI & SOLID STICKY) -->
+    <header class="p-4 flex items-center justify-between bg-white sticky top-0 z-50 border-b border-gray-100 shadow-sm">
+      <div class="flex items-center gap-3">
+        <img src="Logo sekolah.jpg" class="w-10 h-10 rounded-full object-cover border shadow-sm" alt="Logo Sekolah">
+        <div>
+          <h1 class="text-base font-bold text-slate-800 leading-tight">Kain Tenun</h1>
+          <p class="text-xs text-gray-400">Kantin Integritas Tumbuhkan Etika, Nilai dan Nurani</p>
         </div>
+      </div>
+      <button class="w-9 h-9 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-gray-200 transition">
+        <i class="fa-regular fa-bell text-sm"></i>
+      </button>
     </header>
 
-    <!-- Main Container -->
-    <main class="max-w-md mx-auto px-4 pt-4 space-y-4">
+    <!-- CONTENT BODY -->
+    <main class="flex-1 p-4 space-y-5">
 
-        <!-- Banner Profil Edukator -->
-        <div class="bg-gradient-to-br from-blue-600 to-indigo-700 rounded-2xl p-4 text-white shadow-lg shadow-blue-500/10 flex items-center gap-3.5 relative overflow-hidden">
-            <img src="https://lh3.googleusercontent.com/d/1_S5-xK1Y4K2w6h7Y3l9z-R7oI2V3X-N1=s300" alt="Foto Guru" class="w-14 h-14 rounded-full object-cover border-2 border-white/30 shadow-inner flex-shrink-0">
-            <div class="space-y-0.5 z-10">
-                <span class="text-[9px] font-bold tracking-wider uppercase bg-white/20 px-2 py-0.5 rounded-full backdrop-blur-sm">Educator & Creator</span>
-                <h2 class="font-bold text-sm leading-tight text-white pt-0.5">I Made Wibi Fernanda, S.Pd.</h2>
-                <p class="text-[11px] text-blue-100 font-normal">Guru Pendidikan Pancasila — SMPN 17 Denpasar</p>
-            </div>
+      <!-- BANNER GRADIEN BIRU -->
+      <div class="gradient-banner text-white rounded-2xl p-4 shadow-md relative overflow-hidden flex items-center gap-4">
+        <div class="relative z-10">
+          <img src="Wibi.jpg" class="w-16 h-16 rounded-full border-2 border-white/80 object-cover shadow" alt="Pengelola">
+        </div>
+        
+        <div class="relative z-10 flex-1">
+          <span class="inline-block bg-blue-400/30 text-blue-100 text-[10px] font-semibold tracking-wider px-2 py-0.5 rounded-md uppercase mb-1 border border-blue-300/30">
+            PENGELOLA KANTIN KEJUJURAN
+          </span>
+          <h2 class="font-bold text-sm leading-snug">I Made Wibi Fernanda, S.Pd.</h2>
+          <p class="text-xs text-blue-100 mt-0.5 font-light">Guru SMPN 17 Denpasar</p>
+        </div>
+      </div>
+
+      <!-- BERANDA -->
+      <section id="page-beranda" class="space-y-4">
+        <div class="flex items-center justify-between">
+          <h3 class="font-bold text-slate-800 text-sm flex items-center gap-2">
+            <i class="fa-solid fa-pen-ruler text-blue-600"></i> Katalog Alat Tulis (ATK)
+          </h3>
+          <span id="total-item-count" class="text-xs text-gray-400 font-medium">0 Produk</span>
         </div>
 
-        <!-- Grid Menu Utama (3x3) -->
-        <div class="grid grid-cols-3 gap-3 pt-2">
+        <div class="relative">
+          <input type="text" id="search-input" oninput="renderKatalog()" placeholder="Cari nama alat tulis..." 
+                 class="w-full bg-gray-100 text-xs rounded-xl pl-9 pr-4 py-2.5 outline-none focus:ring-2 focus:ring-blue-500 transition">
+          <i class="fa-solid fa-magnifying-glass absolute left-3 top-3 text-gray-400 text-xs"></i>
+        </div>
+
+        <div id="katalog-grid" class="grid grid-cols-2 gap-3"></div>
+
+        <div id="empty-state" class="text-center py-12 px-4 bg-gray-50 rounded-2xl border border-dashed border-gray-200">
+          <div class="w-12 h-12 bg-blue-50 text-blue-500 rounded-full flex items-center justify-center mx-auto mb-3">
+            <i class="fa-solid fa-box-open text-xl"></i>
+          </div>
+          <p class="font-semibold text-xs text-gray-700">Belum Ada Barang ATK</p>
+          <p class="text-[11px] text-gray-400 mt-1 max-w-[200px] mx-auto">Gunakan tab <b>Admin</b> untuk menambahkan produk alat tulis baru.</p>
+        </div>
+      </section>
+
+      <!-- ADMIN (FORM + KELOLA) -->
+      <section id="page-admin" class="hidden space-y-5">
+        
+        <div class="bg-white border border-gray-100 rounded-2xl p-4 shadow-sm space-y-3">
+          <h3 id="form-title" class="font-bold text-slate-800 text-sm flex items-center gap-2 border-b pb-2">
+            <i class="fa-solid fa-plus-circle text-blue-600"></i> Tambah Produk ATK Baru
+          </h3>
+          
+          <form id="form-atk" onsubmit="simpanBarang(event)" class="space-y-3">
+            <input type="hidden" id="edit-index" value="-1">
             
-            <!-- E-Book -->
-            <a href="https://drive.google.com" target="_blank" class="bg-white p-3.5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition text-center flex flex-col items-center gap-2 group">
-                <div class="w-11 h-11 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-lg group-hover:scale-105 transition">
-                    <i class="fa-solid fa-book-open"></i>
-                </div>
-                <span class="text-xs font-semibold text-slate-700">E-Book</span>
-            </a>
+            <div>
+              <label class="block text-[11px] font-semibold text-gray-600 mb-1">Nama Barang ATK</label>
+              <input type="text" id="input-nama" placeholder="Contoh: Pulpen Gel Hitam" required 
+                     class="w-full border text-xs p-2.5 rounded-xl outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
 
-            <!-- Slide PPT -->
-            <a href="https://drive.google.com" target="_blank" class="bg-white p-3.5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition text-center flex flex-col items-center gap-2 group">
-                <div class="w-11 h-11 rounded-xl bg-amber-50 text-amber-500 flex items-center justify-center text-lg group-hover:scale-105 transition">
-                    <i class="fa-solid fa-file-powerpoint"></i>
-                </div>
-                <span class="text-xs font-semibold text-slate-700">Slide PPT</span>
-            </a>
+            <div class="grid grid-cols-2 gap-2">
+              <div>
+                <label class="block text-[11px] font-semibold text-gray-600 mb-1">Harga (Rp)</label>
+                <input type="number" id="input-harga" placeholder="3000" required 
+                       class="w-full border text-xs p-2.5 rounded-xl outline-none focus:ring-2 focus:ring-blue-500">
+              </div>
+              <div>
+                <label class="block text-[11px] font-semibold text-gray-600 mb-1">Jumlah Stok</label>
+                <input type="number" id="input-stok" placeholder="10" required 
+                       class="w-full border text-xs p-2.5 rounded-xl outline-none focus:ring-2 focus:ring-blue-500">
+              </div>
+            </div>
 
-            <!-- Perpus -->
-            <a href="https://drive.google.com" target="_blank" class="bg-white p-3.5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition text-center flex flex-col items-center gap-2 group">
-                <div class="w-11 h-11 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center text-lg group-hover:scale-105 transition">
-                    <i class="fa-solid fa-building-columns"></i>
-                </div>
-                <span class="text-xs font-semibold text-slate-700">Perpus</span>
-            </a>
+            <div>
+              <label class="block text-[11px] font-semibold text-gray-600 mb-1">URL Foto Produk (Optional)</label>
+              <input type="text" id="input-foto" placeholder="nama-file.jpg atau link URL" 
+                     class="w-full border text-xs p-2.5 rounded-xl outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
 
-            <!-- Kuis Soal (Multi-step Modal) -->
-            <button onclick="openQuizModal()" class="bg-white p-3.5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition text-center flex flex-col items-center gap-2 group">
-                <div class="w-11 h-11 rounded-xl bg-rose-50 text-rose-500 flex items-center justify-center text-lg group-hover:scale-105 transition">
-                    <i class="fa-solid fa-circle-question"></i>
-                </div>
-                <span class="text-xs font-semibold text-slate-700">Kuis Soal</span>
-            </button>
-
-            <!-- UUD 1945 -->
-            <a href="https://drive.google.com" target="_blank" class="bg-white p-3.5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition text-center flex flex-col items-center gap-2 group">
-                <div class="w-11 h-11 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-lg group-hover:scale-105 transition">
-                    <i class="fa-solid fa-scale-balanced"></i>
-                </div>
-                <span class="text-xs font-semibold text-slate-700">UUD 1945</span>
-            </a>
-
-            <!-- Video Pembelajaran -->
-            <a href="https://youtube.com/@seputarppkn" target="_blank" class="bg-white p-3.5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition text-center flex flex-col items-center gap-2 group">
-                <div class="w-11 h-11 rounded-xl bg-red-50 text-red-500 flex items-center justify-center text-lg group-hover:scale-105 transition">
-                    <i class="fa-solid fa-play"></i>
-                </div>
-                <span class="text-xs font-semibold text-slate-700">Video</span>
-            </a>
-
-            <!-- Kontak / SI LARAS -->
-            <a href="https://s.id/silaras" target="_blank" class="bg-white p-3.5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition text-center flex flex-col items-center gap-2 group">
-                <div class="w-11 h-11 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center text-lg group-hover:scale-105 transition">
-                    <i class="fa-solid fa-address-book"></i>
-                </div>
-                <span class="text-xs font-semibold text-slate-700">Kontak</span>
-            </a>
-
-            <!-- Saran & Kritik -->
-            <a href="https://s.id/silaras" target="_blank" class="bg-white p-3.5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition text-center flex flex-col items-center gap-2 group">
-                <div class="w-11 h-11 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center text-lg group-hover:scale-105 transition">
-                    <i class="fa-solid fa-comment-dots"></i>
-                </div>
-                <span class="text-xs font-semibold text-slate-700">Saran & Kritik</span>
-            </a>
-
-            <!-- Media Sosial -->
-            <a href="https://youtube.com/@seputarppkn" target="_blank" class="bg-white p-3.5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition text-center flex flex-col items-center gap-2 group">
-                <div class="w-11 h-11 rounded-xl bg-sky-50 text-sky-500 flex items-center justify-center text-lg group-hover:scale-105 transition">
-                    <i class="fa-solid fa-share-nodes"></i>
-                </div>
-                <span class="text-xs font-semibold text-slate-700">Media Sosial</span>
-            </a>
-
+            <div class="flex gap-2">
+              <button type="submit" id="btn-submit" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs py-2.5 rounded-xl shadow transition">
+                + Simpan Produk
+              </button>
+              <button type="button" id="btn-batal" onclick="resetForm()" class="hidden bg-gray-200 text-gray-700 font-bold text-xs py-2.5 px-4 rounded-xl transition">
+                Batal
+              </button>
+            </div>
+          </form>
         </div>
+
+        <div class="bg-white border border-gray-100 rounded-2xl p-4 shadow-sm space-y-3">
+          <h3 class="font-bold text-slate-800 text-sm flex items-center gap-2 border-b pb-2">
+            <i class="fa-solid fa-list-check text-blue-600"></i> Kelola Stok & Harga
+          </h3>
+          <div id="admin-list" class="space-y-2"></div>
+        </div>
+
+        <div class="bg-gray-50 border border-gray-200 rounded-2xl p-4 text-xs space-y-2">
+          <p class="font-semibold text-gray-700">Kode Data JSON (Untuk di-paste ke file `data.json` di GitHub):</p>
+          <textarea id="json-output" readonly rows="4" class="w-full p-2 bg-white border rounded-lg font-mono text-[10px] text-gray-600"></textarea>
+          <button onclick="copyJSON()" class="w-full bg-slate-800 text-white font-bold py-2 rounded-xl text-xs shadow">
+            📋 Salin Kode JSON
+          </button>
+        </div>
+
+      </section>
+
+      <!-- TAB SARAN & ASPIRASI -->
+      <section id="page-saran" class="hidden bg-white border border-gray-100 rounded-2xl p-6 text-center space-y-4 shadow-sm">
+        <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center mx-auto">
+          <i class="fa-solid fa-comments text-xl"></i>
+        </div>
+        <div>
+          <h3 class="font-bold text-slate-800 text-sm">Kotak Saran & Aspirasi</h3>
+          <p class="text-xs text-gray-400 mt-1">Punya saran barang ATK baru atau masukan untuk Kantin Kejujuran? Sampaikan di sini ya!</p>
+        </div>
+
+        <!-- UBAH LINK GOOGLE FORM KAMU DI SINI -->
+        <a href="https://forms.gle/k76mqC23V9HBKiba8" target="_blank" class="block w-full bg-blue-600 text-white font-bold py-3 rounded-xl text-xs shadow hover:bg-blue-700 transition">
+          📝 Isi Form Saran
+        </a>
+      </section>
+
+      <!-- BAGIKAN -->
+      <section id="page-bagikan" class="hidden bg-white border border-gray-100 rounded-2xl p-6 text-center space-y-4 shadow-sm">
+        <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center mx-auto">
+          <i class="fa-solid fa-qrcode text-xl"></i>
+        </div>
+        <div>
+          <h3 class="font-bold text-slate-800 text-sm">QR Code Kantin Kejujuran</h3>
+          <p class="text-xs text-gray-400 mt-1">Cetak dan tempel QR Code ini di meja Kantin Kejujuran fisik sekolah.</p>
+        </div>
+        
+        <div class="bg-gray-50 p-4 rounded-2xl inline-block border">
+          <img id="qr-img" src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https://github.com" alt="QR Code" class="mx-auto rounded-lg">
+        </div>
+
+        <button onclick="copyURL()" class="w-full bg-blue-600 text-white font-bold py-2.5 rounded-xl text-xs shadow hover:bg-blue-700 transition">
+          🔗 Salin Link Web Kantin
+        </button>
+      </section>
+
     </main>
 
-    <!-- Bottom Navigation Bar -->
-    <nav class="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-100 py-2.5 z-30">
-        <div class="max-w-md mx-auto grid grid-cols-3 text-center">
-            <a href="#" class="flex flex-col items-center gap-1 text-blue-600">
-                <i class="fa-solid fa-house text-base"></i>
-                <span class="text-[10px] font-bold">Beranda</span>
-            </a>
-            <button onclick="openProfileModal()" class="flex flex-col items-center gap-1 text-slate-400 hover:text-slate-600">
-                <i class="fa-solid fa-user text-base"></i>
-                <span class="text-[10px] font-medium">Profil</span>
-            </button>
-            <button onclick="sharePortal()" class="flex flex-col items-center gap-1 text-slate-400 hover:text-slate-600">
-                <i class="fa-solid fa-share-nodes text-base"></i>
-                <span class="text-[10px] font-medium">Bagikan</span>
-            </button>
+    <!-- MODAL POPUP PASSWORD ADMIN -->
+    <div id="password-modal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+      <div class="bg-white rounded-2xl p-5 w-full max-w-xs shadow-2xl space-y-4 text-center">
+        <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center mx-auto">
+          <i class="fa-solid fa-lock text-xl"></i>
         </div>
-    </nav>
-
-    <!-- Modal Pop-up Generik -->
-    <div id="content-modal" class="fixed inset-0 bg-slate-900/40 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
-        <div class="bg-white rounded-2xl max-w-sm w-full p-5 shadow-2xl space-y-4">
-            <div class="flex items-center justify-between border-b border-slate-100 pb-3">
-                <h3 id="modal-title" class="font-bold text-slate-800 text-sm">Informasi</h3>
-                <button onclick="closeModal()" class="text-slate-400 hover:text-slate-600 text-sm">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
-            </div>
-            <div id="modal-body" class="text-xs text-slate-600 leading-relaxed">
-                <!-- Konten Modal Dinamis -->
-            </div>
+        <div>
+          <h3 class="font-bold text-slate-800 text-sm">Akses Khusus Admin</h3>
+          <p class="text-xs text-gray-400 mt-1">Masukkan kata sandi pengelola kantin</p>
         </div>
+        <div>
+          <input type="password" id="input-pass" placeholder="Masukkan password..." 
+                 class="w-full border text-center text-xs p-2.5 rounded-xl outline-none focus:ring-2 focus:ring-blue-500">
+          <p id="pass-error" class="text-[10px] text-red-500 mt-1 hidden">Password salah! Akses ditolak.</p>
+        </div>
+        <div class="flex gap-2">
+          <button onclick="batalPassword()" class="w-1/2 bg-gray-100 text-gray-600 font-bold py-2 rounded-xl text-xs">Batal</button>
+          <button onclick="verifikasiPassword()" class="w-1/2 bg-blue-600 text-white font-bold py-2 rounded-xl text-xs shadow">Masuk</button>
+        </div>
+      </div>
     </div>
 
-    <!-- JavaScript Logic -->
-    <script>
-        // Data Kuis per Kelas (Bab 1 - 5)
-        const quizData = {
-            7: [
-                { bab: "Bab 1", judul: "Sejarah Kelahiran Pancasila", link: "#" },
-                { bab: "Bab 2", judul: "Norma dan UUD NRI Tahun 1945", link: "#" },
-                { bab: "Bab 3", judul: "Kesatuan Indonesia dan Gotong Royong", link: "#" },
-                { bab: "Bab 4", judul: "Kebinekaan Indonesia", link: "#" },
-                { bab: "Bab 5", judul: "Wilayah NKRI dan Kewarganegaraan", link: "#" }
-            ],
-            8: [
-                { bab: "Bab 1", judul: "Kedudukan dan Fungsi Pancasila", link: "#" },
-                { bab: "Bab 2", judul: "Bentuk dan Kedaulatan Negara", link: "#" },
-                { bab: "Bab 3", judul: "Tata Urutan Peraturan Perundang-undangan", link: "#" },
-                { bab: "Bab 4", judul: "Bangkitnya Nasionalisme dan Sumpah Pemuda", link: "#" },
-                { bab: "Bab 5", judul: "Jati Diri Bangsa dan Budaya Nasional", link: "#" }
-            ],
-            9: [
-                { bab: "Bab 1", judul: "Dinamika Perwujudan Pancasila", link: "#" },
-                { bab: "Bab 2", judul: "Pembukaan UUD NRI Tahun 1945", link: "#" },
-                { bab: "Bab 3", judul: "Kedaulatan Rakyat dan Sistem Pemerintahan", link: "#" },
-                { bab: "Bab 4", judul: "Persatuan dan Keberagaman Masyarakat", link: "#" },
-                { bab: "Bab 5", judul: "Bela Negara dalam Konteks NKRI", link: "#" }
-            ]
-        };
+    <!-- BOTTOM NAV BAR (4 TAB) -->
+    <nav class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 flex justify-around p-2.5 shadow-lg max-w-md mx-auto z-20">
+      <button onclick="switchTab('beranda')" id="tab-beranda" class="text-blue-600 font-bold flex flex-col items-center gap-1 text-[11px]">
+        <i class="fa-solid fa-house text-base"></i> Beranda
+      </button>
+      <button onclick="mintaAksesAdmin()" id="tab-admin" class="text-gray-400 flex flex-col items-center gap-1 text-[11px]">
+        <i class="fa-solid fa-user-shield text-base"></i> Admin
+      </button>
+      <button onclick="switchTab('saran')" id="tab-saran" class="text-gray-400 flex flex-col items-center gap-1 text-[11px]">
+        <i class="fa-solid fa-comment-dots text-base"></i> Saran
+      </button>
+      <button onclick="switchTab('bagikan')" id="tab-bagikan" class="text-gray-400 flex flex-col items-center gap-1 text-[11px]">
+        <i class="fa-solid fa-share-nodes text-base"></i> Bagikan
+      </button>
+    </nav>
 
-        // Fungsi Tutup Modal
-        function closeModal() {
-            document.getElementById('content-modal').classList.add('hidden');
+  </div>
+
+  <script>
+    let produkList = [];
+    let isAdminUnlocked = false;
+
+    async function muatDataJSON() {
+      try {
+        const response = await fetch('data.json');
+        if (response.ok) {
+          produkList = await response.json();
+          renderKatalog();
+          updateJSONOutput();
         }
+      } catch (error) {
+        console.log('Belum ada file data.json atau gagal memuat data.');
+      }
+    }
 
-        // Modal Profil Guru
-        function openProfileModal() {
-            const modal = document.getElementById('content-modal');
-            const title = document.getElementById('modal-title');
-            const body = document.getElementById('modal-body');
+    function switchTab(tab) {
+      document.getElementById('page-beranda').classList.add('hidden');
+      document.getElementById('page-admin').classList.add('hidden');
+      document.getElementById('page-saran').classList.add('hidden');
+      document.getElementById('page-bagikan').classList.add('hidden');
 
-            modal.classList.remove('hidden');
-            title.innerHTML = `<i class="fa-solid fa-id-card text-blue-600"></i> Profil Pengampu`;
-            body.innerHTML = `
-                <div class="text-center space-y-2">
-                    <h4 class="font-bold text-sm text-slate-800">I Made Wibi Fernanda, S.Pd.</h4>
-                    <p class="text-slate-500">Guru Pendidikan Pancasila SMPN 17 Denpasar</p>
-                    <p class="pt-2 text-slate-600">Selamat datang di portal Seputar PPKn! Media ini dirancang khusus untuk mempermudah akses materi, kuis, dan referensi belajar kawan-kawan semua.</p>
-                </div>
-            `;
-        }
+      document.getElementById('tab-beranda').className = "text-gray-400 flex flex-col items-center gap-1 text-[11px]";
+      document.getElementById('tab-saran').className = "text-gray-400 flex flex-col items-center gap-1 text-[11px]";
+      document.getElementById('tab-admin').className = "text-gray-400 flex flex-col items-center gap-1 text-[11px]";
+      document.getElementById('tab-bagikan').className = "text-gray-400 flex flex-col items-center gap-1 text-[11px]";
 
-        // Modal Lonceng Pengumuman
-        function openNoticeModal() {
-            const modal = document.getElementById('content-modal');
-            const title = document.getElementById('modal-title');
-            const body = document.getElementById('modal-body');
+      document.getElementById(`page-${tab}`).classList.remove('hidden');
+      document.getElementById(`tab-${tab}`).className = "text-blue-600 font-bold flex flex-col items-center gap-1 text-[11px]";
+    }
 
-            modal.classList.remove('hidden');
-            title.innerHTML = `<i class="fa-solid fa-bell text-amber-500"></i> Info & Pengumuman`;
-            body.innerHTML = `
-                <div class="p-3 bg-blue-50 border border-blue-100 rounded-xl space-y-1">
-                    <span class="text-[9px] font-bold text-blue-600 bg-white px-2 py-0.5 rounded">TERBARU</span>
-                    <h5 class="font-bold text-slate-800 pt-1">Portal Seputar PPKn Resmi Rilis!</h5>
-                    <p class="text-slate-600">Gunakan portal ini untuk mengakses E-book, Slide PPT, dan Latihan Soal Kuis harian kalian ya.</p>
-                </div>
-            `;
-        }
+    function mintaAksesAdmin() {
+      if (isAdminUnlocked) {
+        switchTab('admin');
+      } else {
+        document.getElementById('password-modal').classList.remove('hidden');
+        document.getElementById('input-pass').value = '';
+        document.getElementById('pass-error').classList.add('hidden');
+      }
+    }
 
-        // Modal Kuis (Step 1: Pilih Kelas)
-        function openQuizModal() {
-            const modal = document.getElementById('content-modal');
-            const title = document.getElementById('modal-title');
-            const body = document.getElementById('modal-body');
+    function batalPassword() {
+      document.getElementById('password-modal').classList.add('hidden');
+    }
 
-            modal.classList.remove('hidden');
-            title.innerHTML = `<i class="fa-solid fa-gamepad text-blue-600"></i> Kuis PPKn Interaktif`;
-            
-            body.innerHTML = `
-                <p class="text-xs text-slate-500 mb-3 text-center">Pilih jenjang kelas kamu terlebih dahulu:</p>
-                <div class="grid grid-cols-3 gap-2">
-                    <button onclick="showQuizList(7)" class="p-3 bg-blue-50 border border-blue-200 rounded-xl text-center hover:bg-blue-100 transition">
-                        <div class="text-lg font-extrabold text-blue-600">7</div>
-                        <div class="text-[10px] font-medium text-slate-600">Kelas VII</div>
-                    </button>
-                    <button onclick="showQuizList(8)" class="p-3 bg-emerald-50 border border-emerald-200 rounded-xl text-center hover:bg-emerald-100 transition">
-                        <div class="text-lg font-extrabold text-emerald-600">8</div>
-                        <div class="text-[10px] font-medium text-slate-600">Kelas VIII</div>
-                    </button>
-                    <button onclick="showQuizList(9)" class="p-3 bg-purple-50 border border-purple-200 rounded-xl text-center hover:bg-purple-100 transition">
-                        <div class="text-lg font-extrabold text-purple-600">9</div>
-                        <div class="text-[10px] font-medium text-slate-600">Kelas IX</div>
-                    </button>
-                </div>
-            `;
-        }
+    function verifikasiPassword() {
+      const pass = document.getElementById('input-pass').value;
+      if (pass === '@smpn17jujur') {
+        isAdminUnlocked = true;
+        document.getElementById('password-modal').classList.add('hidden');
+        switchTab('admin');
+        renderAdminList();
+      } else {
+        document.getElementById('pass-error').classList.remove('hidden');
+      }
+    }
 
-        // Modal Kuis (Step 2: Daftar Bab)
-        function showQuizList(kelas) {
-            const title = document.getElementById('modal-title');
-            const body = document.getElementById('modal-body');
-            const list = quizData[kelas];
+    function renderKatalog() {
+      const grid = document.getElementById('katalog-grid');
+      const emptyState = document.getElementById('empty-state');
+      const searchKeyword = document.getElementById('search-input').value.toLowerCase();
+      
+      const filtered = produkList.filter(p => p.nama.toLowerCase().includes(searchKeyword));
 
-            title.innerHTML = `
-                <div class="flex items-center gap-2">
-                    <button onclick="openQuizModal()" class="text-slate-400 hover:text-slate-600 text-sm">
-                        <i class="fa-solid fa-arrow-left"></i>
-                    </button>
-                    <span>Kuis Kelas ${kelas}</span>
-                </div>
-            `;
+      document.getElementById('total-item-count').innerText = `${filtered.length} Produk`;
 
-            let html = `<div class="space-y-2 max-h-[60vh] overflow-y-auto pr-1">`;
-            
-            list.forEach((item) => {
-                const isReady = item.link !== "#";
-                html += `
-                    <div class="p-2.5 bg-slate-50 border border-slate-100 rounded-xl flex items-center justify-between">
-                        <div>
-                            <span class="text-[9px] font-bold text-blue-600 bg-blue-50 px-1.5 py-0.5 rounded">${item.bab}</span>
-                            <h6 class="text-xs font-semibold text-slate-800 mt-0.5">${item.judul}</h6>
-                        </div>
-                        ${isReady 
-                            ? `<a href="${item.link}" target="_blank" class="px-2.5 py-1 bg-blue-600 text-white text-[10px] font-medium rounded-lg hover:bg-blue-700 transition">Mulai</a>`
-                            : `<span class="text-[10px] text-slate-400 italic">Segera</span>`
-                        }
-                    </div>
-                `;
-            });
+      if (filtered.length === 0) {
+        grid.innerHTML = '';
+        emptyState.classList.remove('hidden');
+        return;
+      }
 
-            html += `</div>`;
-            body.innerHTML = html;
-        }
+      emptyState.classList.add('hidden');
+      grid.innerHTML = filtered.map(item => `
+        <div class="bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between">
+          <div class="relative h-28 bg-gray-100">
+            <img src="${item.foto || 'https://via.placeholder.com/150?text=ATK'}" class="w-full h-full object-cover" alt="${item.nama}" onerror="this.src='https://via.placeholder.com/150?text=ATK'">
+            <span class="absolute top-2 right-2 text-[10px] font-bold px-2 py-0.5 rounded-full ${item.stok > 0 ? 'bg-blue-600 text-white' : 'bg-red-500 text-white'} shadow">
+              ${item.stok > 0 ? 'Stok: ' + item.stok : 'Habis'}
+            </span>
+          </div>
+          <div class="p-3">
+            <h4 class="font-bold text-xs text-gray-800 line-clamp-1">${item.nama}</h4>
+            <p class="text-blue-600 font-extrabold text-xs mt-1">Rp ${Number(item.harga).toLocaleString('id-ID')}</p>
+          </div>
+        </div>
+      `).join('');
+    }
 
-        // Fitur Bagikan Link
-        function sharePortal() {
-            if (navigator.share) {
-                navigator.share({
-                    title: 'Seputar PPKn',
-                    text: 'Media Pembelajaran Digital Pendidikan Pancasila SMPN 17 Denpasar',
-                    url: window.location.href,
-                });
-            } else {
-                navigator.clipboard.writeText(window.location.href);
-                alert('Link portal berhasil disalin!');
-            }
-        }
-    </script>
+    function renderAdminList() {
+      const container = document.getElementById('admin-list');
+      if (produkList.length === 0) {
+        container.innerHTML = '<p class="text-center text-xs text-gray-400 py-4">Belum ada barang untuk dikelola.</p>';
+        return;
+      }
+
+      container.innerHTML = produkList.map((item, index) => `
+        <div class="flex items-center justify-between p-2.5 bg-gray-50 border rounded-xl">
+          <div class="flex items-center gap-3">
+            <img src="${item.foto || 'https://via.placeholder.com/150?text=ATK'}" class="w-10 h-10 rounded-lg object-cover border" onerror="this.src='https://via.placeholder.com/150?text=ATK'">
+            <div>
+              <h4 class="font-bold text-xs text-gray-800">${item.nama}</h4>
+              <p class="text-[11px] text-gray-500">Rp ${Number(item.harga).toLocaleString('id-ID')} | Stok: ${item.stok}</p>
+            </div>
+          </div>
+          <div class="flex gap-1">
+            <button onclick="editBarang(${index})" class="w-7 h-7 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center text-xs hover:bg-blue-200">
+              <i class="fa-solid fa-pen"></i>
+            </button>
+            <button onclick="hapusBarang(${index})" class="w-7 h-7 bg-red-100 text-red-600 rounded-lg flex items-center justify-center text-xs hover:bg-red-200">
+              <i class="fa-solid fa-trash"></i>
+            </button>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function simpanBarang(e) {
+      e.preventDefault();
+      const idx = parseInt(document.getElementById('edit-index').value);
+      const nama = document.getElementById('input-nama').value;
+      const harga = Number(document.getElementById('input-harga').value);
+      const stok = Number(document.getElementById('input-stok').value);
+      const foto = document.getElementById('input-foto').value;
+
+      if (idx === -1) {
+        produkList.push({ nama, harga, stok, foto });
+        alert('Produk berhasil ditambahkan! Silakan salin Kode JSON di bawah dan paste ke file data.json di GitHub.');
+      } else {
+        produkList[idx] = { nama, harga, stok, foto };
+        alert('Produk berhasil diperbarui! Silakan salin Kode JSON di bawah dan paste ke file data.json di GitHub.');
+      }
+
+      resetForm();
+      renderKatalog();
+      renderAdminList();
+      updateJSONOutput();
+    }
+
+    function editBarang(index) {
+      const item = produkList[index];
+      document.getElementById('edit-index').value = index;
+      document.getElementById('input-nama').value = item.nama;
+      document.getElementById('input-harga').value = item.harga;
+      document.getElementById('input-stok').value = item.stok;
+      document.getElementById('input-foto').value = item.foto;
+
+      document.getElementById('form-title').innerHTML = `<i class="fa-solid fa-pen-to-square text-blue-600"></i> Edit Produk ATK`;
+      document.getElementById('btn-submit').innerText = '✓ Perbarui Produk';
+      document.getElementById('btn-batal').classList.remove('hidden');
+    }
+
+    function resetForm() {
+      document.getElementById('form-atk').reset();
+      document.getElementById('edit-index').value = "-1";
+      document.getElementById('form-title').innerHTML = `<i class="fa-solid fa-plus-circle text-blue-600"></i> Tambah Produk ATK Baru`;
+      document.getElementById('btn-submit').innerText = '+ Simpan Produk';
+      document.getElementById('btn-batal').classList.add('hidden');
+    }
+
+    function hapusBarang(index) {
+      if (confirm(`Yakin ingin menghapus "${produkList[index].nama}"?`)) {
+        produkList.splice(index, 1);
+        renderKatalog();
+        renderAdminList();
+        updateJSONOutput();
+      }
+    }
+
+    function updateJSONOutput() {
+      document.getElementById('json-output').value = JSON.stringify(produkList, null, 2);
+    }
+
+    function copyJSON() {
+      const copyText = document.getElementById("json-output");
+      copyText.select();
+      navigator.clipboard.writeText(copyText.value);
+      alert("Kode JSON disalin! Tinggal buka file data.json di GitHub lalu paste & commit.");
+    }
+
+    function copyURL() {
+      navigator.clipboard.writeText(window.location.href);
+      alert('Link Kantin berhasil disalin!');
+    }
+
+    document.getElementById('qr-img').src = `https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=${encodeURIComponent(window.location.href)}`;
+    
+    muatDataJSON();
+  </script>
 </body>
 </html>
