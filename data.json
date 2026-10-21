@@ -1,0 +1,122 @@
+[
+  {
+    "nama": "Pensil",
+    "harga": 3000,
+    "stok": 24,
+    "foto": "https://down-id.img.susercontent.com/file/sg-11134201-8262d-mjxncorb0g0694"
+  },
+  {
+    "nama": "Pulpen",
+    "harga": 5000,
+    "stok": 24,
+    "foto": "https://img.lazcdn.com/g/p/a12b7466b642086dcf210bbbed56f724.jpg_960x960q80.jpg_.webp"
+  },
+  {
+    "nama": "Buku Tulis Sidu ",
+    "harga": 5000,
+    "stok": 20,
+    "foto": "https://down-id.img.susercontent.com/file/id-11134207-7rbka-masja0jtju5n72"
+  },
+  {
+    "nama": "Buku Kotak 5mm",
+    "harga": 5000,
+    "stok": 20,
+    "foto": "https://sidu.id/documents/287278/0/SiDU+Matematika.jpg/2bbf1cc4-8a21-4e1e-563a-46b8d166c144?t=1739326085411"
+  },
+  {
+    "nama": "Penghapus",
+    "harga": 2000,
+    "stok": 40,
+    "foto": "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full/catalog-image/MTA-100991578/joyko_na_joyko_eraser_526_b40bl_-_penghapus_joyko_hitam_-_penghapus_pensil_ujian_hitam_-_karet_penghapus_kecil_-_putih_full01_k2uay129.jpg"
+  },
+  {
+    "nama": "Buku Gambar A3",
+    "harga": 8000,
+    "stok": 20,
+    "foto": "https://down-id.img.susercontent.com/file/id-11134207-7rbkb-maexy2872m1qd0"
+  },
+  {
+    "nama": "Buku Gambar A4 ",
+    "harga": 5000,
+    "stok": 20,
+    "foto": "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/1cf49c060b4f4360a91589755e635c09~tplv-aphluv4xwc-resize-jpeg:700:0.jpeg"
+  },
+  {
+    "nama": "Correction ",
+    "harga": 6000,
+    "stok": 12,
+    "foto": "https://id-live-01.slatic.net/p/0efdd65c45d71f8d7810443d1ad778be.jpg"
+  },
+  {
+    "nama": "Lem Povinal",
+    "harga": 5000,
+    "stok": 20,
+    "foto": "https://parto.id/asset/foto_produk/LEM_KERTAS_CAIR.jpg"
+  },
+  {
+    "nama": "Rautan Pensil",
+    "harga": 2000,
+    "stok": 15,
+    "foto": "https://img.mbizmarket.co.id/products/thumbs/800x800/2022/12/21/6c0bc2f01bbd4c3bd4fc7e16fb46665d.jpg"
+  },
+  {
+    "nama": "Tempelan Stiker",
+    "harga": 5000,
+    "stok": 10,
+    "foto": "https://down-id.img.susercontent.com/file/sg-11134201-7rdxi-lza9z59x4td67e"
+  },
+  {
+    "nama": "Kertas Origami",
+    "harga": 5000,
+    "stok": 10,
+    "foto": "https://down-id.img.susercontent.com/file/id-11134207-7rasm-m0ifug1zrwave0"
+  },
+  {
+    "nama": "Spidol",
+    "harga": 3000,
+    "stok": 15,
+    "foto": "https://smb-padiumkm-images-public-prod.oss-ap-southeast-5.aliyuncs.com/product/image/06122024/65e7d37cd73ce314ef8902f6/675291ffc089d95656a25db9/a5b8b352f97eefcd71d686cf760aa7.jpg"
+  },
+  {
+    "nama": "Tissue",
+    "harga": 2000,
+    "stok": 10,
+    "foto": "https://down-id.img.susercontent.com/file/86c6275a175ae31f9fc4c8f11642b78b"
+  },
+  {
+    "nama": "Kertas Manila",
+    "harga": 5000,
+    "stok": 10,
+    "foto": "https://siplah.blibli.com/data/images/SCII-0006-00078/85acaf2f-2806-48a0-b557-95eb1c5bd043.png"
+  },
+  {
+    "nama": "Gunting",
+    "harga": 5000,
+    "stok": 12,
+    "foto": "https://officemart.id/wp-content/uploads/2025/10/stw5402.jpeg"
+  },
+  {
+    "nama": "Cutter",
+    "harga": 5000,
+    "stok": 12,
+    "foto": "https://down-id.img.susercontent.com/file/id-11134207-7quky-li5eb9ztmixjf8"
+  },
+  {
+    "nama": "Air Mineral",
+    "harga": 5000,
+    "stok": 10,
+    "foto": "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full/catalog-image/107/MTA-169882253/aqua_aqua-air-mineral-botol-600ml-dus-isi-24pcs_full01.jpg"
+  },
+  {
+    "nama": "Penggaris",
+    "harga": 5000,
+    "stok": 20,
+    "foto": "https://down-id.img.susercontent.com/file/df8e66465fa7809f50574452af20e856"
+  },
+  {
+    "nama": "Double Tape",
+    "harga": 6000,
+    "stok": 10,
+    "foto": "https://down-id.img.susercontent.com/file/2bf8f25497090ddbf0295976126c07ee"
+  }
+]
