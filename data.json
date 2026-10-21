@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "nama": "Air Mineral",
+    "harga": 5000,
+    "stok": 10,
+    "wa": "083119652058",
+    "foto": "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full/catalog-image/107/MTA-169882253/aqua_aqua-air-mineral-botol-600ml-dus-isi-24pcs_full01.jpg"
+  },
+  {
+    "nama": "Mie Slebew",
+    "harga": 5000,
+    "stok": 20,
+    "wa": "083119652058",
+    "foto": "http://cdn-jpr.jawapos.com/images/3/2025/08/06/6-mie-jebew-2429264283.jpg"
+  }
+]
