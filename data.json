@@ -1,12 +1,5 @@
 [
   {
-    "nama": "Air Mineral",
-    "harga": 5000,
-    "kelompok": "Kelompok 1/VII.A",
-    "wa": "083119652058",
-    "foto": "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full/catalog-image/107/MTA-169882253/aqua_aqua-air-mineral-botol-600ml-dus-isi-24pcs_full01.jpg"
-  },
-  {
     "nama": "Samyang Roll",
     "harga": 10000,
     "kelompok": "Kelompok 3/VII.C",
@@ -200,7 +193,7 @@
     "harga": 2000,
     "kelompok": "Kelompok 3/VII.B",
     "wa": "087841440161",
-    "foto": "7B.K3.1.jpg"
+    "foto": "7B.K3.1.1.jpg"
   },
   {
     "nama": "Stiky Milk",
@@ -222,5 +215,75 @@
     "kelompok": "Kelompok 5/VII.B",
     "wa": "087818220080",
     "foto": "7B.K5.2.jpg"
+  },
+  {
+    "nama": "Lumpia Ubi Ungu dan Egg Mayo",
+    "harga": 8000,
+    "kelompok": "Kelompok 1/VII.D",
+    "wa": "085791113465",
+    "foto": "7D.K1.1.jpg"
+  },
+  {
+    "nama": "Es Milo Dino",
+    "harga": 6000,
+    "kelompok": "Kelompok 1/VII.D",
+    "wa": "085791113465",
+    "foto": "7D.K1.2.png"
+  },
+  {
+    "nama": "Es Jeruk Bahagia",
+    "harga": 6000,
+    "kelompok": "Kelompok 2/VII.D",
+    "wa": "082313181592",
+    "foto": "7D.K2.1.jpg"
+  },
+  {
+    "nama": "Mie Iblis",
+    "harga": 8000,
+    "kelompok": "Kelompok 2/VII.D",
+    "wa": "082313181592",
+    "foto": "7D.K2.2.jpg"
+  },
+  {
+    "nama": "Es Lemon Tea",
+    "harga": 5000,
+    "kelompok": "Kelompok 3/VII.D",
+    "wa": "087787515300",
+    "foto": "7D.K3.1.png"
+  },
+  {
+    "nama": "Samyang Roll",
+    "harga": 8000,
+    "kelompok": "Kelompok 3/VII.D",
+    "wa": "087787515300",
+    "foto": "7D.K3.2.png"
+  },
+  {
+    "nama": "Risoles Mayo",
+    "harga": 3000,
+    "kelompok": "Kelompok 4/VII.D",
+    "wa": "085974674040",
+    "foto": "7D.K4.1.jpg"
+  },
+  {
+    "nama": "Es Teh Tarik",
+    "harga": 6000,
+    "kelompok": "Kelompok 4/VII.D",
+    "wa": "085974674040",
+    "foto": "7D.K4.2.jpg"
+  },
+  {
+    "nama": "Spicy Chicken Wings",
+    "harga": 10000,
+    "kelompok": "Kelompok5/VII.D",
+    "wa": "081998452995",
+    "foto": "7D.K5.1.png"
+  },
+  {
+    "nama": "Es Biji Selasih",
+    "harga": 8000,
+    "kelompok": "Kelompok 5/VII.D",
+    "wa": "081998452995",
+    "foto": "7D.K5.2.png"
   }
 ]
